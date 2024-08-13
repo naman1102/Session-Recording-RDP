@@ -39,3 +39,7 @@ Step 5: System Daemon Reload and start rdp-monitor service.
 Step 6: Check the RDP monitor working
 
 ```systemctl status rdp-monitor.service```
+
+### Support and Contribute
+
+Feel free to fork and contribute. Let me know if there is any issue. Drop PR for the merge. Do follow and star the project if you like it.
