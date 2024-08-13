@@ -8,7 +8,7 @@ Edit rtmp server link in the python script
 
 Step 1: Git clone the repo in the system
 
-```git clone https://git.com/naman1102/Session-Recording-RDP.git```
+```git clone https://git.com/naman1102/Session-Recording-RDP.git```\n
 ```cd Session-Recording-RDP```
 
 Step 2: Change the rtmp server link
