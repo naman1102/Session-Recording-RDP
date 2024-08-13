@@ -22,7 +22,7 @@ Step 2: Change the rtmp server link
 
 Step 3: Copy the rdp-monitor.py to the /usr/local/bin
 
-```cp rdp-monitor.py /usr/local/bin/rdp-monitor.py```
+```cp rdp_monitor.py /usr/local/bin/rdp_monitor.py```
 
 Step 4: Copy the rdp-monitor.service to the /etc/systemd/system/
 
