@@ -1,0 +1,19 @@
+
+# /etc/systemd/system/rdp-monitor.service
+[Unit]
+Description=RDP Session Monitoring and Recording Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/rdp_monitor.py
+Restart=always
+User=root
+WorkingDirectory=/usr/local/bin
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=rdp_monitor
+Enviroment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
