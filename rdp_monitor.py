@@ -25,7 +25,7 @@ def monitor_user(user):
         if not user_sessions[user]["ffmpeg_process"] or user_sessions[user]["ffmpeg_process"].poll() is not None:
             # Start ffmpeg process as the user
             filename = user_sessions[user]['filename']
-            ffmpeg_command = f"ffmpeg -f x11grab -i :{display} -framerate 25 -video_size {video_size} -c:v h264 -crf 20 -preset ultrafast -f flv rtmp://172.27.71.55/Recording/{filename}_{display} -y"
+            ffmpeg_command = f"ffmpeg -f x11grab -i :{display} -framerate 25 -video_size {video_size} -c:v h264 -crf 20 -preset ultrafast -f flv rtmp://<change with the rtmp server and application>/{filename}_{display} -y"
             print(f"Starting ffmpeg for user {user}: {ffmpeg_command}")
             user_sessions[user]["ffmpeg_process"] = subprocess.Popen(f"su - {user} -c \"{ffmpeg_command}\"", shell=True)
 
