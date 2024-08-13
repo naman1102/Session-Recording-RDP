@@ -4,6 +4,11 @@ A python script based on the Xrdp, ffmpeg to give live stream of the user sessio
 Note: Run media server locally or get enterprise edition of the ant media server for the rtmp link
 Edit rtmp server link in the python script
 
+### Pre-Requistes
+
+- Install Xrdp for the RDP session on the Linux system
+- Install ffmpeg and ant-media server for the session recording and management
+
 ### Installation & Setup
 
 Step 1: Git clone the repo in the system
