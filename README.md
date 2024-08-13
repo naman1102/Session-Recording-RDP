@@ -8,13 +8,16 @@ Edit rtmp server link in the python script
 
 Step 1: Git clone the repo in the system
 
-```git clone https://git.com/naman1102/Session-Recording-RDP.git```\n
+```git clone https://git.com/naman1102/Session-Recording-RDP.git```
+
 ```cd Session-Recording-RDP```
 
 Step 2: Change the rtmp server link
 
 ```vi rdp-monitor.py```
+
 ```# /rtmp # in the vi editor search```
+
 ``` change the link with rtmp server ```
 
 Step 3: Copy the rdp-monitor.py to the /usr/local/bin
@@ -28,7 +31,9 @@ Step 4: Copy the rdp-monitor.service to the /etc/systemd/system/
 Step 5: System Daemon Reload and start rdp-monitor service.
 
 ```systemctl daemon-reload```
+
 ```systemctl enable rdp-monitor.service```
+
 ```systemctl start rdp-monitor.service```
 
 Step 6: Check the RDP monitor working
